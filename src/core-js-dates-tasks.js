@@ -95,7 +95,7 @@ function getCountDaysInMonth(month, year) {
   const date1 = new Date(year, month);
   const date2 = new Date(year, month - 1);
   const res = date1 - date2;
-  return res / 86400000;
+  return Math.round(res / 86400000);
 }
 
 /**

@@ -239,7 +239,7 @@ function getNextFridayThe13th(date) {
   while (!stop) {
     const newDate2 = new Date(year, month, 13);
 
-    const day = newDate2.getUTCDay() + 1;
+    const day = newDate2.getUTCDay();
 
     if (day === 5) {
       stop = true;
